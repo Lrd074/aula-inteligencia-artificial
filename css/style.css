@@ -10,3 +10,24 @@
 @media(max-width:600px){.container{width:min(100% - 36px,480px)}.section{padding:70px 0}.hero{padding:63px 0 24px}.hero-grid{min-height:0}.hero h1{font-size:43px}.hero-lead{font-size:16px}.hero-text{font-size:13px}.hero-art{height:325px}.art-window{width:275px}.orbit-one{width:330px;height:220px}.orbit-two{width:360px;height:270px}.chip-top{right:0;top:38px}.chip-bottom{right:0;bottom:58px}.art-caption{left:0;bottom:8px}.hero-bottom{font-size:8px}.scroll-hint{display:none}.section-heading h2,.presenter-copy h2,.care-copy h2{font-size:33px}.section-heading>p:not(.eyebrow){font-size:13px}.feature-grid{grid-template-columns:1fr;gap:11px}.feature-card{min-height:0;padding:22px}.icon-box{margin-bottom:16px}.presenter-section{padding:70px 0}.presenter-grid{grid-template-columns:1fr;gap:28px}.presenter-visual{min-height:305px}.portrait-placeholder{transform:scale(.78)}.presenter-copy h2{font-size:34px}.learning-item{grid-template-columns:32px 1fr 24px;gap:10px;padding:20px 3px}.learning-body h3{font-size:15px}.learning-body ul{display:block}.learning-body li{font-size:12px;margin:5px 0}.learning-symbol{font-size:18px}.tool-grid{grid-template-columns:1fr}.tool-card{min-height:0}.tools-section .section-heading{margin-bottom:30px}.prompt-heading{margin-bottom:32px}.prompt-cards{grid-template-columns:1fr}.prompt-card{min-height:0;padding:19px}.prompt-guide{display:block}.guide-stamp{position:absolute;right:19px;top:18px}.day-grid{grid-template-columns:1fr 1fr;gap:9px}.day-card{padding:18px 15px;min-height:0}.day-card h3{font-size:13px}.day-card li{font-size:10px}.care-section{padding:70px 0}.care-grid{grid-template-columns:1fr;gap:25px}.care-copy h2{font-size:34px}.care-copy blockquote{font-size:15px}.care-list{padding:9px 16px}.care-item{align-items:flex-start}.care-item p{font-size:11px}.faq-layout{grid-template-columns:1fr;gap:28px}.faq-layout .section-heading{position:static;margin-bottom:0}.faq-layout .section-heading h2{font-size:34px}.faq-list summary{font-size:13px;padding:16px 32px 16px 0}.closing-section{padding:65px 0}.closing-section h2{font-size:34px}.closing-section .container>p:not(.eyebrow){font-size:13px}.closing-decoration{font-size:60px}.decoration-a{left:-45px}.decoration-b{right:-45px}.site-footer{padding-top:42px}.footer-main{grid-template-columns:1fr 1fr;gap:28px 20px}.footer-brand{grid-column:1/-1}.footer-links-extra{grid-column:2}.footer-bottom{align-items:flex-start;flex-wrap:wrap;gap:10px}.footer-bottom span:nth-child(2){order:3;width:100%}}
 @media(max-width:370px){.container{width:calc(100% - 28px)}.hero h1{font-size:37px}.button{width:100%}.hero-art{height:290px}.art-window{width:248px}.chip-top,.chip-bottom{font-size:8px}.day-grid{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr}.footer-brand,.footer-links-extra{grid-column:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* === FOTO DO INSTRUTOR === */
+
+.portrait-placeholder::before,
+.portrait-placeholder::after {
+    content: none;
+}
+
+.presenter-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+.portrait-orbit {
+    pointer-events: none;
+}
